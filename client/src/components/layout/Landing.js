@@ -6,17 +6,17 @@ const Landing = () => {
     <section className='landing'>
       <div className='dark-overlay'>
         <div className='landing-inner'>
-          <h1 className='x-large'>Developer Connector</h1>
+          <h1 className='x-large'>Networking For Medical Professionals</h1>
           <p className='lead'>
-            Create a developer profile/portfolio, share posts and get help from
-            other developers
+            Create your profile, share posts and network with other medical
+            professionals!
           </p>
           <div className='buttons'>
             <Link to='/register' className='btn btn-primary'>
               Sign Up
             </Link>
-            <Link to='/login' className='btn btn-light'>
-              Login
+            <Link to='/login' className='btn'>
+              Login Up
             </Link>
           </div>
         </div>

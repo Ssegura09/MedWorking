@@ -3,15 +3,16 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className='navbar bg-dark'>
+    <nav className='navbar bg-dark2'>
       <h1>
         <Link to='/'>
-          <i className='fas fa-code'></i> DevConnector
+          {' '}
+          <i className='fas fa-user-md'></i> MedWorking{' '}
         </Link>
       </h1>
       <ul>
         <li>
-          <a href='!#'>Developers</a>
+          <Link to='!#'>Profiles</Link>
         </li>
         <li>
           <Link to='/register'>Register</Link>
