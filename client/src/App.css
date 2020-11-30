@@ -7,6 +7,7 @@
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
   --success-color: #28a745;
+  --new-color: #4b5668;
 }
 
 /* :root {
@@ -27,21 +28,23 @@ body {
   font-family: 'Yeseva One', cursive;
   font-size: 1rem;
   line-height: 1.6;
-  color: var(--light-color);
-  /* color: #333; */
+  /* color: var(--light-color); */
+  color: #333;
 
   position: relative;
-  background: url('./try1.jpg') no-repeat center center/cover;
+  background: url('./power.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
   height: 100vh;
 }
 
 #overlay {
-  background-color: rgba(0, 0, 0, 0.589);
+  background-color: rgba(0, 0, 0, 0.247);
+  background-attachment: fixed;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 123%;
+  height: 300%;
 }
 
 a {
@@ -55,6 +58,24 @@ ul {
 
 img {
   width: 100%;
+}
+
+.test {
+  padding: 20px;
+  width: 710px;
+  position: relative;
+  background: rgba(241, 239, 239, 0.678);
+}
+
+.test {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 /* Utilities */
@@ -250,7 +271,7 @@ img {
 
 /* Overlay */
 .dark-overlay {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.247);
   position: absolute;
   top: 0;
   left: 0;
@@ -512,14 +533,19 @@ button {
   margin-bottom: 0.5rem;
 }
 
+.hide-sm {
+  opacity: 0.9;
+  color: #333;
+}
+
+.empty-sm {
+  opacity: 0;
+}
+
 /* Mobile Styles */
 @media (max-width: 700px) {
   .container {
     margin-top: 8rem;
-  }
-
-  .hide-sm {
-    display: none;
   }
 
   /* Text Styles */
