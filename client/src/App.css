@@ -86,6 +86,11 @@ img {
   padding: 0 2rem;
   margin-top: 6rem;
   margin-bottom: 3rem;
+  opacity: 0.96;
+}
+
+.spinner {
+  background: rgba(255, 255, 255, 0.089);
 }
 
 /* Text Styles*/
@@ -205,6 +210,7 @@ img {
 .bg-primary,
 .badge-primary,
 .alert-primary {
+  /* Handles profile background behind img */
   background: var(--primary-color);
   color: #fff;
 }
@@ -260,7 +266,7 @@ img {
 }
 
 .round-img {
-  border-radius: 50%;
+  border-radius: 20%;
 }
 
 .line {
@@ -280,8 +286,13 @@ img {
 }
 
 /* Forms */
+
+.textarea {
+  resize: none;
+}
+
 .form .form-group {
-  margin: 1.2rem 0;
+  margin: 0.5rem 0;
 }
 
 .form .form-text {
