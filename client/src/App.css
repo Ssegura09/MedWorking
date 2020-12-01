@@ -90,7 +90,7 @@ img {
 }
 
 .spinner {
-  background: rgba(255, 255, 255, 0.089);
+  opacity: 0.2;
 }
 
 /* Text Styles*/
@@ -289,6 +289,7 @@ img {
 
 .textarea {
   resize: none;
+  outline: none;
 }
 
 .form .form-group {
@@ -298,7 +299,7 @@ img {
 .form .form-text {
   display: block;
   margin-top: 0.3rem;
-  color: #888;
+  color: #333;
 }
 
 .form input[type='text'],

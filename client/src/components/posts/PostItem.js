@@ -44,7 +44,7 @@ const PostItem = ({
             <i className='fas fa-thumbs-down'></i>
           </button>
           <Link to={`/posts/${_id}`} className='btn btn-primary'>
-            Discussion{' '}
+            Comment{' '}
             {comments.length > 0 && (
               <span className='comment-count'>{comments.length}</span>
             )}
@@ -55,7 +55,7 @@ const PostItem = ({
               type='button'
               className='btn btn-danger'
             >
-              <i className='fas fa-times'></i>
+              <i className='fas fa-trash-alt'></i>
             </button>
           )}
         </Fragment>

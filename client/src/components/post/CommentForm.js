@@ -20,6 +20,7 @@ const CommentForm = ({ postId, addComment }) => {
         className='form my-1'
       >
         <textarea
+          // style='font-family:Times New Roman;color:#003399;white-space:pre-wrap'
           className='textarea'
           name='text'
           cols='60'

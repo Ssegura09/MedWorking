@@ -169,7 +169,7 @@ const EditProfile = ({
             >
               Add Social Network Links
             </button>
-            <span>Optional</span>
+            <small className='form-text'>(Optional)</small>
           </div>
 
           {displaySocialInputs && (
