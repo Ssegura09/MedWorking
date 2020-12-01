@@ -18,6 +18,10 @@ const Post = ({ getPost, post: { post, loading }, match }) => {
   ) : (
     <Fragment>
       <div className='test'>
+        <h1 className='large text-primary'>Comments</h1>
+        <p className='lead'>
+          <i className='fas fa-user' /> Leave a comment below
+        </p>
         <Link to='/posts' className='btn'>
           Back To Posts
         </Link>
