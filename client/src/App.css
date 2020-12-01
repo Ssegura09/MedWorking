@@ -1,11 +1,22 @@
 /* Global Styles */
 :root {
+  --primary-color: #ab9780;
+  /* --primary-color: #d36207; */
+  /* --primary-color: #df183b; */
+  --dark-color: #343a40;
+  --light-color: #f4f4f4;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+  --new-color: #4b5668;
+}
+
+/* :root {
   --primary-color: #17a2b8;
   --dark-color: #343a40;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
   --success-color: #28a745;
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -14,11 +25,26 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Yeseva One', cursive;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fff;
+  /* color: var(--light-color); */
   color: #333;
+
+  position: relative;
+  background: url('./power.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+#overlay {
+  background-color: rgba(0, 0, 0, 0.247);
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300%;
 }
 
 a {
@@ -34,6 +60,24 @@ img {
   width: 100%;
 }
 
+.test {
+  padding: 20px;
+  width: 710px;
+  position: relative;
+  background: rgba(241, 239, 239, 0.678);
+}
+
+.test {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 /* Utilities */
 .container {
   max-width: 1100px;
@@ -42,6 +86,11 @@ img {
   padding: 0 2rem;
   margin-top: 6rem;
   margin-bottom: 3rem;
+  opacity: 0.96;
+}
+
+.spinner {
+  opacity: 0.2;
 }
 
 /* Text Styles*/
@@ -58,7 +107,8 @@ img {
 }
 
 .lead {
-  font-size: 1.5rem;
+  font-style: italic;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
 }
 
@@ -160,6 +210,7 @@ img {
 .bg-primary,
 .badge-primary,
 .alert-primary {
+  /* Handles profile background behind img */
   background: var(--primary-color);
   color: #fff;
 }
@@ -215,7 +266,7 @@ img {
 }
 
 .round-img {
-  border-radius: 50%;
+  border-radius: 20%;
 }
 
 .line {
@@ -226,7 +277,7 @@ img {
 
 /* Overlay */
 .dark-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.247);
   position: absolute;
   top: 0;
   left: 0;
@@ -235,14 +286,20 @@ img {
 }
 
 /* Forms */
+
+.textarea {
+  resize: none;
+  outline: none;
+}
+
 .form .form-group {
-  margin: 1.2rem 0;
+  margin: 0.5rem 0;
 }
 
 .form .form-text {
   display: block;
   margin-top: 0.3rem;
-  color: #888;
+  color: #333;
 }
 
 .form input[type='text'],
@@ -308,7 +365,7 @@ button {
   z-index: 1;
   width: 100%;
   top: 0;
-  border-bottom: solid 1px var(--primary-color);
+  /* border-bottom: solid 1px var(--primary-color); */
   opacity: 0.9;
 }
 
@@ -488,14 +545,19 @@ button {
   margin-bottom: 0.5rem;
 }
 
+.hide-sm {
+  opacity: 0.9;
+  color: #333;
+}
+
+.empty-sm {
+  opacity: 0;
+}
+
 /* Mobile Styles */
 @media (max-width: 700px) {
   .container {
     margin-top: 8rem;
-  }
-
-  .hide-sm {
-    display: none;
   }
 
   /* Text Styles */

@@ -14,17 +14,17 @@ const PostItem = ({
   post: { _id, text, name, avatar, user, likes, comments, date },
   showActions,
 }) => (
-  <div class='post bg-white p-1 my-1'>
+  <div className='post bg-white p-1 my-1'>
     <div>
-      <a href='profile.html'>
-        <img class='round-img' src={avatar} alt='' />
+      <Link to={`/profile/${user}`}>
+        <img className='round-img' src={avatar} alt='' />
         <h4>{name}</h4>
-      </a>
+      </Link>
     </div>
     <div>
-      <p class='my-1'>{text}</p>
-      <p class='post-date'>
-        Posted on <Moment format='DD/MM/YYYY'>{date}</Moment>
+      <p className='my-1'>{text}</p>
+      <p className='post-date'>
+        Posted on <Moment format='MM/DD/YYYY'>{date}</Moment>
       </p>
 
       {showActions && (

@@ -3,6 +3,7 @@ import { setAlert } from './alert';
 // import Spinner from '../layout/Spinner';
 import {
   GET_POSTS,
+  GET_POST,
   POST_ERROR,
   UPDATE_LIKES,
   DELETE_POST,
@@ -61,7 +62,7 @@ export const removeLike = (id) => async (dispatch) => {
   }
 };
 
-// DELETE post
+// DELETE Post
 export const deletePost = (id) => async (dispatch) => {
   try {
     const res = await axios.delete(`/api/posts/${id}`);
@@ -71,7 +72,7 @@ export const deletePost = (id) => async (dispatch) => {
       payload: id,
     });
 
-    dispatch(setAlert('Post removed', 'success'));
+    dispatch(setAlert('Post removed', 'danger'));
   } catch (err) {
     dispatch({
       type: POST_ERROR,

@@ -12,11 +12,9 @@ const Landing = ({ isAuthenticated }) => {
     <section className='landing'>
       <div className='dark-overlay'>
         <div className='landing-inner'>
-          <h1 className='x-large'>Networking For Medical Professionals</h1>
-          <p className='lead'>
-            Create your profile, share posts and network with other medical
-            professionals!
-          </p>
+          <h1 className='x-large'>Welcome to MedWorking</h1>
+          {/* <h1 className='x-large'>Networking For Medical Professionals</h1> */}
+          <p className='lead'>Networking For Medical Professionals</p>
           <div className='buttons'>
             <Link to='/register' className='btn btn-primary'>
               Sign Up
