@@ -33,6 +33,10 @@ const Post = ({ getPost, post: { post, loading }, match }) => {
           ))}
         </div>
       </div>
+      <Link to='/posts' className='btn'>
+        Back to Posts
+      </Link>
+      <PostItem post={post} showActions={false} />
     </Fragment>
   );
 };

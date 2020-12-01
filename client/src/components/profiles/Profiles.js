@@ -15,18 +15,20 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
         <Spinner />
       ) : (
         <Fragment>
-          <h1 className='large text-primary'>Medical Professionals</h1>
-          <p className='lead'>
-            <i className='fas fa-users' /> Browse and Connect
-          </p>
-          <div className='profiles'>
-            {profiles.length > 0 ? (
-              profiles.map((profile) => (
-                <ProfileItem key={profile._id} profile={profile} />
-              ))
-            ) : (
-              <h4>No profiles found...</h4>
-            )}
+          <div className='test'>
+            <h1 className='large text-primary'>Medical Professionals</h1>
+            <p className='lead'>
+              <i className='fas fa-users' /> Browse and Connect
+            </p>
+            <div className='profiles'>
+              {profiles.length > 0 ? (
+                profiles.map((profile) => (
+                  <ProfileItem key={profile._id} profile={profile} />
+                ))
+              ) : (
+                <h4>No profiles found...</h4>
+              )}
+            </div>
           </div>
         </Fragment>
       )}
