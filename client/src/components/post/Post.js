@@ -1,11 +1,18 @@
 import React, { Fragment, useEffect } from 'react';
 import PropTypes from 'prop-types';
+<<<<<<< HEAD
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Spinner from '../layout/Spinner';
 import PostItem from '../posts/PostItem';
 import CommentForm from '../post/CommentForm';
 import CommentItem from '../post/CommentItem';
+=======
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+import Spinner from '../layout/Spinner';
+import PostItem from '../posts/PostItem';
+>>>>>>> 4c09b065bcb715b553e7ab6f91f0b7eee03a5aee
 import { getPost } from '../../actions/post';
 
 const Post = ({ getPost, post: { post, loading }, match }) => {
@@ -17,6 +24,7 @@ const Post = ({ getPost, post: { post, loading }, match }) => {
     <Spinner />
   ) : (
     <Fragment>
+<<<<<<< HEAD
       <div className='test'>
         <Link to='/posts' className='btn'>
           Back To Posts
@@ -33,6 +41,12 @@ const Post = ({ getPost, post: { post, loading }, match }) => {
           ))}
         </div>
       </div>
+=======
+      <Link to='/posts' className='btn'>
+        Back to Posts
+      </Link>
+      <PostItem post={post} showActions={false} />
+>>>>>>> 4c09b065bcb715b553e7ab6f91f0b7eee03a5aee
     </Fragment>
   );
 };

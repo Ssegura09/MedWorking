@@ -8,8 +8,12 @@ import {
   UPDATE_LIKES,
   DELETE_POST,
   ADD_POST,
+<<<<<<< HEAD
   ADD_COMMENT,
   REMOVE_COMMENT,
+=======
+  GET_POST,
+>>>>>>> 4c09b065bcb715b553e7ab6f91f0b7eee03a5aee
 } from './types';
 
 // Get posts
@@ -123,6 +127,7 @@ export const getPost = (id) => async (dispatch) => {
     });
   }
 };
+<<<<<<< HEAD
 
 // add COMMENT
 export const addComment = (postId, formData) => async (dispatch) => {
@@ -171,3 +176,5 @@ export const deleteComment = (postId, commentId) => async (dispatch) => {
     });
   }
 };
+=======
+>>>>>>> 4c09b065bcb715b553e7ab6f91f0b7eee03a5aee

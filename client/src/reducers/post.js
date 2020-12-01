@@ -5,8 +5,12 @@ import {
   UPDATE_LIKES,
   DELETE_POST,
   ADD_POST,
+<<<<<<< HEAD
   ADD_COMMENT,
   REMOVE_COMMENT,
+=======
+  GET_POST,
+>>>>>>> 4c09b065bcb715b553e7ab6f91f0b7eee03a5aee
 } from '../actions/types';
 
 const initialState = {
