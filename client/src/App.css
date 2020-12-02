@@ -206,6 +206,21 @@ img {
   color: #333;
 }
 
+.btn-trash-comment {
+  display: inline-block;
+  background: var(--light-color);
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: -20rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+  background: var(--danger-color);
+  color: #fff;
+}
+
 .btn-primary,
 .bg-primary,
 .badge-primary,
@@ -290,6 +305,8 @@ img {
 .textarea {
   resize: none;
   outline: none;
+  font-family: 'Yeseva One', cursive;
+  font-size: 1rem;
 }
 
 .form .form-group {
