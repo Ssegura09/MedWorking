@@ -89,6 +89,7 @@ const EditProfile = ({
                 Medical Doctor/Medical Specialist
               </option>
               <option value='Registered Nurse'>Registered Nurse</option>
+              <option value='Looking For Work'>Looking For Work</option>
               <option value='Nutritionist'>Nutritionist</option>
               <option value='Pharmacist'>Pharmacist</option>
               <option value='Physician Assistant'>Physician Assistant</option>

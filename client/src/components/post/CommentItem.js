@@ -21,7 +21,7 @@ const CommentItem = ({
     <div>
       <p className='my-1'>{text}</p>
       <p className='post-date'>
-        Posted on <Moment format='DD/MM/YYYY'>{date}</Moment>
+        Posted on <Moment format='MM/DD/YYYY'>{date}</Moment>
       </p>
       {!auth.loading && user === auth.user._id && (
         <button

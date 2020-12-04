@@ -24,7 +24,7 @@ const PostItem = ({
     <div>
       <p className='my-1'>{text}</p>
       <p className='post-date'>
-        Posted on <Moment format='DD/MM/YYYY'>{date}</Moment>
+        Posted on <Moment format='MM/DD/YYYY'>{date}</Moment>
       </p>
 
       {showActions && (
@@ -45,7 +45,7 @@ const PostItem = ({
             <i class='fas fa-thumbs-down'></i>
           </button>
           <Link to={`/posts/${_id}`} class='btn btn-primary'>
-            Discussion{' '}
+            Comment{' '}
             {comments.length > 0 && (
               <span class='comment-count'>{comments.length}</span>
             )}
@@ -56,7 +56,7 @@ const PostItem = ({
               type='button'
               class='btn btn-danger'
             >
-              <i class='fas fa-times'></i>
+              <i className='fas fa-trash-alt'></i>
             </button>
           )}
         </Fragment>

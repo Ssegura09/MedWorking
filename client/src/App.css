@@ -91,6 +91,7 @@ img {
 
 .spinner {
   opacity: 0.2;
+  border-radius: 50%;
 }
 
 /* Text Styles*/
@@ -226,7 +227,7 @@ img {
 .badge-primary,
 .alert-primary {
   /* Handles profile background behind img */
-  background: var(--primary-color);
+  background: #ab9780b4;
   color: #fff;
 }
 
@@ -305,8 +306,8 @@ img {
 .textarea {
   resize: none;
   outline: none;
-  font-family: 'Yeseva One', cursive;
-  font-size: 1rem;
+  /* font-family: 'Yeseva One', cursive;
+  font-size: 18px; */
 }
 
 .form .form-group {
