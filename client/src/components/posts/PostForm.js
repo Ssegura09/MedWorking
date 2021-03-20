@@ -10,7 +10,7 @@ const PostForm = ({ addPost }) => {
   return (
     <div className='post-form'>
       <div className='bg-primary p'>
-        <h3>Say Something...</h3>
+        <h3>Say Something!</h3>
       </div>
       <form
         onSubmit={(e) => {
